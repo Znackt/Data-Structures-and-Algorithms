@@ -93,4 +93,3 @@ MADE PROFIT FOR LOSS. ALSO DETERMINE HOW MUCH PROFIT OR LOSS INCURED.*/
           _         => println!("The character you entered is not an alphabet"),
         }
     }*/
-
