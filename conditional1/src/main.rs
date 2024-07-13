@@ -5,10 +5,10 @@ fn main() {
     // Create a mutable String to store the input
     let mut input1 = String::new();
     io::stdin().read_line(&mut input1);
- /* let mut input2 = String::new();
+    let mut input2 = String::new();
     io::stdin().read_line(&mut input2)
         .expect("Failed to read line");
-    Trim the input and parse it to an integer
+    /*Trim the input and parse it to an integer
     let mut x: i32 = input1.trim().parse().expect("Please enter a valid integer");
     let mut y: i32 = input2.trim().parse().expect("Please enter a valid integer"); */
     /* let Some(ch) = input1.trim().chars().next() else {
