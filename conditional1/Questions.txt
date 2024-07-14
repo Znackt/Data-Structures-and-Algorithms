@@ -31,4 +31,7 @@ Ans : Line 96
   40 - 50 Below Average
   <40 Fail 
 ]
-Ans : Line 98
+Ans : Line 98 , Line 126
+
+10. Write a PROGRAM To check whether a given character is a vowel or a consonant
+Ans : 

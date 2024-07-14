@@ -6,7 +6,7 @@ fn main() {
     let mut input1 = String::new();
     io::stdin().read_line(&mut input1);
     let mut x: i32 = input1.trim().parse().expect("Please enter a valid integer");
-    
+    grade2(x);
 }
 
 /* fn even_odd (x: i32) {
@@ -95,7 +95,7 @@ match ascii {
     else {println!("{} is the greatest",y);}
 }*/
 
-/*fn grade(x: i32) {
+/* fn grade(x: i32) {
     if (x >= 91) && (x <= 100) {
         println!("Excellent");
     } else {
@@ -123,3 +123,30 @@ match ascii {
     }
 }*/
 
+fn grade(x: i32) {
+    let msg = match x {
+        91..=100 => "Excellent",
+        81..=90 => "Very Good",
+        71..=80 => "Good",
+        61..=70 => "Can do better",
+        51..=60 => "Average",
+        41..=50 => "Below Average",
+        _ => "Fail",
+    };
+    println!("{msg}")
+}
+
+fn grade2(x: i32) {
+    println!(
+        "{}",
+        [
+            "Fail",
+            "Below Average",
+            "Average",
+            "Can do better",
+            "Good",
+            "Very Good",
+            "Excellent"
+        ][(x.saturating_sub(1) as usize / 10).saturating_sub(3)]
+    )
+}
