@@ -5,14 +5,8 @@ fn main() {
     // Create a mutable String to store the input
     let mut input1 = String::new();
     io::stdin().read_line(&mut input1);
-    let mut input2 = String::new();
-    io::stdin()
-        .read_line(&mut input2)
-        .expect("Failed to read line");
-    //Trim the input and parse it to an integer
     let mut x: i32 = input1.trim().parse().expect("Please enter a valid integer");
-    let mut y: i32 = input2.trim().parse().expect("Please enter a valid integer"); 
-    divisible(x);
+    
 }
 
 /* fn even_odd (x: i32) {
@@ -77,11 +71,55 @@ match ascii {
     }
 }*/
 
-fn divisible (x:i32) {
-    if (x % 3 == 0) || (x % 5 == 0) {
-        println!("The number you entered is either divisible by 5 or 3");
+/*fn divisible (x:i32) {
+
+    let y = ((x % 3 == 0) || (x % 5 == 0));
+    let z = (x % 15 == 0);
+    if z {
+        println!("The number you entered is divisible by 15");
+    }
+    else if y && !z {
+        println!("The number you entered is either divisible by 5 or 3 but not by 15");
     }
     else {
         println!("The number you entered is neither divisible by 5 or 3");
     }
-}
+}*/
+
+/*fn greatest (x: i32, y:i32, z:i32) {
+    if (x > y) {
+        if (z > y) {println!("{} is the greatest",z);}
+
+        else {println!("{} is the greatest",x);}
+    }
+    else {println!("{} is the greatest",y);}
+}*/
+
+/*fn grade(x: i32) {
+    if (x >= 91) && (x <= 100) {
+        println!("Excellent");
+    } else {
+        if (x >= 81) && (x <= 90) {
+            println!("very good");
+        } else {
+            if (x >= 71) && (x <= 80) {
+                println!("good");
+            } else {
+                if (x >= 61) && (x <= 70) {
+                    println!("Can do better");
+                } else {
+                    if (x >= 51) && (x <= 60) {
+                        println!("Average");
+                    } else {
+                        if (x >= 40) && (x <= 50) {
+                            println!("Below Average");
+                        } else {
+                            println!("Fail")
+                        }
+                    }
+                }
+            }
+        }
+    }
+}*/
+

@@ -17,4 +17,18 @@ Ans : Line 64
 Ans : Line 74
 
 7. Take positive integer input and tell if it is divisible by 5 or 3 but not divisible by 15.
-Ans : 
+Ans : Line 77
+
+8. Take three positive integer input and print the greatest of them.
+Ans : Line 96
+
+9. Take input marks of a student and print the grades according to marks
+[ 91 - 100 Excellent
+  81 - 90 Very good 
+  71 - 80 good
+  61 - 70 Can do better 
+  51 - 60 Average
+  40 - 50 Below Average
+  <40 Fail 
+]
+Ans : Line 98
