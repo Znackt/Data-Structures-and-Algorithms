@@ -150,4 +150,3 @@ fn grade2(x: i32) {
         ][(x.saturating_sub(1) as usize / 10).saturating_sub(3)]
     )
 }
-
