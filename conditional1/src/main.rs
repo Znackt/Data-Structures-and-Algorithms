@@ -5,8 +5,15 @@ fn main() {
     // Create a mutable String to store the input
     let mut input1 = String::new();
     io::stdin().read_line(&mut input1);
-    let mut x: i32 = input1.trim().parse().expect("Please enter a valid integer");
-    grade2(x);
+    let mut input2 = String::new();
+    io::stdin().read_line(&mut input2);
+    let mut input3 = String::new();
+    io::stdin().read_line(&mut input3);
+    let x: i32 = input1.trim().parse().expect("Please enter a valid integer");
+    let y: i32 = input2.trim().parse().expect("Please enter a valid integer");
+    let z: i32 = input3.trim().parse().expect("Please enter a valid integer");
+
+    check_sides_of_triangle(x,y,z);
 }
 
 /* fn even_odd (x: i32) {
@@ -123,7 +130,7 @@ match ascii {
     }
 }*/
 
-fn grade(x: i32) {
+/*fn grade(x: i32) {
     let msg = match x {
         91..=100 => "Excellent",
         81..=90 => "Very Good",
@@ -134,9 +141,9 @@ fn grade(x: i32) {
         _ => "Fail",
     };
     println!("{msg}")
-}
+}*/
 
-fn grade2(x: i32) {
+/*fn grade2(x: i32) {
     println!(
         "{}",
         [
@@ -149,4 +156,22 @@ fn grade2(x: i32) {
             "Excellent"
         ][(x.saturating_sub(1) as usize / 10).saturating_sub(3)]
     )
+}*/
+
+/*fn vowel_consonant(ch_lower: char, original: char) {
+    match ch_lower {
+        'a' | 'e' | 'i' | 'o' | 'u' => println!("'{}' is a vowel.", original),
+        'b'..='z' => println!("'{}' is a consonant.", original),
+        _ => println!("'{}' is not a valid alphabetic character.", original),
+    }
+}*/
+
+fn check_sides_of_triangle (x: i32, y:i32, z: i32) {
+    //For side of triangle we need to sum of two sides is greater than the third side
+    if (x + y > z) && (y + z > x) && (z + x > y) {
+        println!("These are sides of triangle");
+    }
+    else {
+        println!("These are not the sides of triangle");
+    }
 }

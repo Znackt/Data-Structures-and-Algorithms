@@ -34,5 +34,8 @@ Ans : Line 96
 Ans : Line 98 , Line 126
 
 10. Write a PROGRAM To check whether a given character is a vowel or a consonant
-<br>Ans : 
+<br>Ans : Line 157
+
+11. Take 3 numbers input and tell if they can be the sides of the triangle
+<br>Ans : Line 165
 
