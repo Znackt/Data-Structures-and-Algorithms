@@ -15,7 +15,8 @@ fn main() {
     let mut input3 = String::new();
     let _ = io::stdin().read_line(&mut input3);
     let _operator: char = input3.trim().parse().expect("Please enter a valid integer");
-    calculator(_x, _y, _operator);
+    
+    
 }
 
 //Check even or Odd
@@ -73,7 +74,7 @@ using match statements */
 /* Write a program to create a calculator that performs basic arithemetic operations
 (add, subtract, multiply, divide) using switch case and functions. The calculator
 should input two numbers and an operator from user */
-fn calculator(x: i32, y: i32, operator: char) {
+/*fn calculator(x: i32, y: i32, operator: char) {
     match operator {
         '+' => println!("{} + {} = {}", x, y, x + y),
         '-' => println!("{} - {} = {}", x, y, x - y),
@@ -94,4 +95,5 @@ fn calculator(x: i32, y: i32, operator: char) {
         }
         _ => println!("Enter valid operator"),
     }
-}
+}*/
+
