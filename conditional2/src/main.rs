@@ -10,11 +10,11 @@ fn main() {
     let mut input2 = String::new();
     let _ = io::stdin().read_line(&mut input2);
     let _y: i32 = input2.trim().parse().expect("Please enter a valid integer");
-    
+
     println!("Enter operator");
     let mut input3 = String::new();
     let _ = io::stdin().read_line(&mut input3);
-    let _operator:char = input3.trim().parse().expect("Please enter a valid integer");
+    let _operator: char = input3.trim().parse().expect("Please enter a valid integer");
     calculator(_x, _y, _operator);
 }
 
@@ -73,28 +73,25 @@ using match statements */
 /* Write a program to create a calculator that performs basic arithemetic operations
 (add, subtract, multiply, divide) using switch case and functions. The calculator
 should input two numbers and an operator from user */
-fn calculator (x:i32, y:i32, operator:char) {
+fn calculator(x: i32, y: i32, operator: char) {
     match operator {
-        '+' => println!("{} + {} = {}",x, y, x+y),
-        '-' => println!("{} - {} = {}",x, y, x-y),
-        '*' => println!("{} * {} = {}",x, y, x*y),
+        '+' => println!("{} + {} = {}", x, y, x + y),
+        '-' => println!("{} - {} = {}", x, y, x - y),
+        '*' => println!("{} * {} = {}", x, y, x * y),
         '/' => {
-            if y!=0 {
-                println!("{} / {} = {}",x, y, x/y);
-            }
-            else {
+            if y != 0 {
+                println!("{} / {} = {}", x, y, x / y);
+            } else {
                 println!("Can't divide by zero");
             }
-        },
+        }
         '%' => {
-            if y!=0 {
-                println!("{} % {} = {}",x, y, x%y);
-            }
-            else {
+            if y != 0 {
+                println!("{} % {} = {}", x, y, x % y);
+            } else {
                 println!("Can't divide by zero");
             }
-        },
+        }
         _ => println!("Enter valid operator"),
-        
     }
 }
